@@ -108,7 +108,7 @@ export const LoginRegisterContainer = () => {
                   errorText={formik.touched.password && formik.errors.password}
                 />
                 <button className="btn btn-primary d-block w-100 mb-5" type="submit" disabled={state.isLoading}>
-                  Submit {state.isLoading && <FaSpinner className="fa-spin" />}
+                  Submit {state.isLoading && <FaSpinner className="fa-spin animation__spinner" />}
                 </button>
                 <Link className="d-block text-center" to={state.isLogin ? `/auth/register` : "/auth/login"}>
                   {state.isLogin ? `Register` : "Login"}
